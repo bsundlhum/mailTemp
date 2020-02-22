@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+
+    <style type="text/css">
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 600px;
+            margin: 0 auto;
+            padding: 0;
+            font-family: 'arial';
+            color: #333;
+            background-color: #fff;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body bgcolor="#fff">
+    <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+    <table border="0" width="600" cellspacing="0" cellpadding="0" bgcolor="#fff" style="font-family:'arial'">
+        <tr>
+            <td style="background:#fff;height:80px; padding: 0 40px;">
+                <table style="width:100%" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <a href="{TE_link}" target="_blank" style="outline:none; border:0;"><img src="{TE_logo_img}" style="border:0;" width="244" height="54" alt="Talent Exchange" /></a>
+                        </td>
+                        <td style="text-align:right;"><a href="{TE_Loign_link}" target="_blank" style="font-size:16px; font-weight:bold;color:#333;">Sign In</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="background: #efefef;"><img src="{TE_strip_img}" /></td>
+        </tr>
+        <tr>
+            <td style="padding: 20px 40px 40px 40px;background: #efefef;">
+                <table bgcolor="#fff" style="width:100%" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="padding:20px; background-color: #fff;">
+                            <table style="width:100%" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <h2 style="margin-top:0px;">Stand and deliver(y).</h2>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p>Dear <span>{User_Name}</span>,</p>
+                            <p>
+                                <a href="mailto:{Talent_EmailId}" style="color:#fc5912;">{Talent_Name}</a> has been off-boarded
+                                from the
+                                <span style="color:#fc5912;">{Role_Name}</span> role. Don't forget to give {Talent_FirstName} a delivery
+                                score and a review that explains how you arrived at that score. Delivery scores help other PwC teams assess
+                                their options as they search for talent. You will need to complete this important step before you can take
+                                any other action on the exchange. Talent will not see their delivery score, which should be kept strictly
+                                internal and confidential.
+                            </p>
+                            <p>
+                                As part of off-boarding, you also have two other key responsibilities. First, have your talent return any
+                                technology to you or the nearest PwC office. In addition, you must approve or return any outstanding time
+                                and expenses as soon as possible to help your talent receive payment in a timely manner.
+                            </p>
+                            <p style="margin-top: 30px;">Best regards,</p>
+                            <p style="margin-bottom:4px;">The Talent Exchange Team</p>
+                            <a href="mailto:talentexchange@us.pwc.com" style="color:#fc5912;">TalentExchange@us.pwc.com</a>
+                            <p>&nbsp;</p>
+                            <table style="width:100%; border:1px solid #ddd; " cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td style="background-color: #f2f2f2; padding-left: 20px;">
+                                        <a href="mailto:{Talent_EmailId}" style="color:#fc5912; font-size: 20px;"><strong>{Talent_Name}</strong></a><br />
+                                        <span style="color:#fc5912;">{Role_Name}</span>
+                                        <p style="color: #a6a6a6; font-family: Georgia;"><i><strong>{Sector}</strong></i></p>
+                                    </td>
+                                    <td>
+                                        <table style="width:100%; padding: 40px 20px 5px 20px;" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td colspan="2"><strong>Off Boarded</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><p style="border-top:2px solid #ddd; margin-bottom: 0px;">&nbsp;</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="font-size:13px; color:#333; margin-top: 0px;"><span style="color:#999"><strong>START</strong></span><br />{Start_Time}</p>
+                                                </td>
+                                                <td>
+                                                    <p style="font-size:13px; color:#333; margin-top: 0px;"><span style="color:#999"><strong>END</strong></span><br />{Off_Boarding_Date}</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p style="background-color:#fc5912; text-align:center; padding: 13px 25px;border-radius: 3px;"><a href="{Link_To_Talent_Profile}" style="color: #fff; text-decoration: none; padding: 13px 25px; ">Provide Delivery Score</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 25px 40px;background: #edd8cc;">
+                <table bgcolor="#edd8cc" style="width:100%" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="padding-bottom:20px;">
+                            <table style="width:100%" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <p style="margin:0 0 5px;font-size:14px;color:#333;">Invite Others to Join</p>
+                                        <p style="margin:0;">
+                                            <a href="{share_linkedin_link}" style="outline:none; border:0;">
+                                                <img src="{TE_in_img}" style="border:0;" alt="in" width="36" height="33" />
+                                            </a>
+                                            <a href="{share_facebook_link}" style="outline:none; border:0;">
+                                                <img src="{TE_fb_img}" style="border:0;" alt="fb" width="36" height="33" />
+                                            </a>
+                                            <a href="{share_twitter_link}" style="outline:none; border:0;">
+                                                <img src="{TE_tw_img}" style="border:0;" alt="tw" width="36" height="33" />
+                                            </a>
+                                            <a href="{share_gPlus_link}" style="outline:none; border:0;">
+                                                <img src="{TE_gPlus_img}" style="border:0;" alt="gpls" width="36" height="33" />
+                                            </a>
+                                            <a href="mailto:?subject=It just got easier to fill your pipeline with interesting work&body=Check out PwC's Talent Exchange, a first-of-its kind marketplace that connects independent talent with exciting opportunities at PwC.
+ With the Talent Exchange you will have opportunities to work on high-profile projects and interesting challenges for leading brands, get direct access to PwC teams and have greater transparency into proposed project pipelines, timing and even market pricing.">
+                                                <img src="{share_mail_link}" alt="mail" width="36" height="33" />
+                                            </a>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p style="margin:0 0 5px;font-size:14px;color:#333;">Get the App</p>
+                                        <p style="margin:0;font-size:12px;font-weight:bold"><a style="color:#fc5912;" href="{appleStore_link}" target="_blank">Apple</a></p>
+                                        <p style="margin:0;font-size:12px;font-weight:bold"><a style="color:#fc5912;" href="{playStore_link}" target="_blank">Android</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="font-size:11px;font-weight:bold;text-align:left">
+                        <td>
+                            <table style="width:100%" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td style="text-align:left;color:#fc5912">
+                                        <a style="color:#fc5912;" href="{aboutPWC_URL}" target="_blank">MORE ABOUT PwC</a>
+                                    </td>
+                                    <td style="text-align:left;color:#fc5912">
+                                        <a href="{Term_Condition_link}" target="_blank" style="color:#fc5912;padding:0 15px;">TERMS &amp; CONDITIONS</a>
+                                    </td>
+                                    <td style="text-align:left;color:#fc5912">
+                                        <a style="color:#fc5912;" href="{Privacy_Policy_link}" target="_blank">PRIVACY POLICY</a>
+                                    </td>
+                                    <td style="text-align:left;width:60px">&nbsp;</td>
+                                    <td style="text-align:left;width:60px">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:10px; color:#333">
+                            <p style="font-size:10px">
+                                &copy; 2018 PwC. All rights reserved. PwC refers to the US member firm or one of its subsidiaries
+                                or affiliates, and may sometimes refer to the PwC network. Each member firm is a separate
+                                legal entity. Please see <a style="color:#fc5912;" href="{pwcStructure_link}" target="_blank">www.pwc.com/structure</a> for further details. We are proud to be an Affirmative Action and Equal Opportunity Employer. Talent Exchange is a trademark of PwC.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</body>
+
+</html>

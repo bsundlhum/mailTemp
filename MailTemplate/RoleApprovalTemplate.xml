@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template:emailTemplate application="fraud forum website" version="1.2" xmlns:user="http://www.bitethebullet.co.uk/EmailProcessor/UserData"
+xmlns:template="http://bitethebullet.co.uk/EmailProcessor/Template">
+<template:name>Approve Role</template:name>
+<template:description>Sends a mail to approver the role</template:description>
+<template:mailFormat>PlainText</template:mailFormat>
+<template:message>
+<template:subject>Approve Role</template:subject>
+<template:body>
+Dear <user:userData name="user_full_name" mandatory="true" />,
+Please approve or deny the role by clicking on respective links.
+
+Approve:
+<user:userData name="role_approve_url" mandatory ="true" />
+Deny :
+ <user:userData name="role_deny_url" mandatory ="true" /> 
+
+
+
+Kind regards,
+Administrator
+
+
+
+</template:body>
+<template:attachments>
+</template:attachments>
+</template:message>
+</template:emailTemplate>
+
+

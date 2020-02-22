@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <style type="text/css">
+        html{ margin: 0; padding: 0;}
+        body{
+            margin: 0 auto; padding: 0;
+            font-family: 'Helvetica Neue','Arial';
+            color:#333;
+            background:#fff;
+        }
+        p{
+            font-size:14px;
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body bgcolor="#fff">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="width: 100%;max-width: 600px;margin: 0 auto;font-family:'Helvetica Neue','Arial';font-size:14px;"><tr><td><![endif]-->
+    <table border="0" width="600" cellspacing="0" cellpadding="0" bgcolor="#fff" style="width: 100%;max-width: 600px;margin: 0 auto;font-family:'Helvetica Neue','Arial';font-size:14px;">
+        <tr>
+            <td style="background:#fff;height:80px; padding: 0 4%;">
+                <table style="width:100%" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width="70%"><a href="{TE_link}" target="_blank" style="outline:none; border:0;"><img src="{TE_logo_img}" style="max-width: 244px;width: 100%;border:0;" alt="Talent Exchange" /></a></td>
+                            <td width="30%" style="text-align:right;"><a href="{TE_Loign_link}" target="_blank" style="font-size:16px; font-weight:bold;color:#333;">Sign In</a></td>
+                        </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="background: #efefef;"><img src="{TE_strip_img}" width="100%"></td>
+        </tr>
+        <tr>
+            <td style="padding: 25px 4%;background: #ededed;">
+                <table bgcolor="#fff" style="width:100%" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="padding:20px; background:#fff">
+                            <table style="width:100%" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td><h2 style="margin-top:0px;font-family: 'ITCCharter','Georgia'; font-style: italic;">We need your approval.</h2></td>
+                                </tr>
+                            </table>
+                            <p>Dear {PartnerName},</p>
+                            <p style="margin:10px 0px">
+                                {EM_First_Name} has submitted a role that requires your approval. Follow the instructions below to approve, return or deny the request.
+                            </p>
+                            <table width="100%" border="0" cellpadding="2" cellspacing="2" style="display:table;border: solid 1px #ddd;border-radius: 2px;padding: 10px ;margin: 20px auto;">
+                                    <tr>
+                                        <td colspan="2">
+                                            <p style="margin:0;color:#fc5912;font-weight:bold">{Role_Title}</p>
+                                            <p style="margin:5px 0 0 0;font-size:14px; color:#999;"><i>{Sector}</i></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4"><p style="margin-bottom:0px;color:#333;">WBS Code <strong>{WBSCode} </strong></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top:15px;">
+                                            <div style="width: 100%;max-width: 220px;display: inline-block;vertical-align: top;text-align:left;">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="margin-bottom:5px; font-size:15px; margin:0"><strong>{Location}</strong></p>
+                                                        </td>
+                                                    </tr>
+                                                </table>                                            
+                                            </div>
+                                            <div style="width: 100%;max-width: 200px;display: inline-block;vertical-align: top;text-align:left;">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="margin-bottom:5px; font-size:15px; margin:0"><strong>{Role_Status}</strong></p>
+                                                        </td>
+                                                    </tr>
+                                                </table>                                            
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" valign="top" style="padding:5px 0 0 0;border-top:1px solid #ddd;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td style="padding:0px;">
+                                                            <div style="width: 100%;max-width: 220px;display: inline-block;vertical-align: top;">
+                                                                <table align="left" style="width:100%;">
+                                                                        <tr>
+                                                                            <td style="padding:0px;font-family:'Helvetica Neue','Arial';font-weight:bold;color:#333;font-size: 12px;">START DATE<br><span style="font-weight:normal;">{Startdate}</span></td>
+                                                                            <td style="padding:0px;font-family:'Helvetica Neue','Arial';font-weight:bold;color:#333;font-size: 12px;">END DATE<br><span style="font-weight:normal;">{Enddate}</span></td>
+                                                                        </tr>
+                                                                </table>
+                                                            </div>
+                                                            <div style="width: 100%;max-width: 220px;display: inline-block;vertical-align: top;">
+                                                                <table align="left" style="width:100%;">
+                                                                        <tr>
+                                                                            <td style="padding:0px;font-family:'Helvetica Neue','Arial';font-weight:bold;color:#333;font-size: 12px;">DURATION<br><span style="font-weight:normal;">{Duration}</span></td>
+                                                                            <td style="padding:0px;font-family:'Helvetica Neue','Arial';font-weight:bold;color:#333;font-size: 12px;">TRAVEL<br><span style="font-weight:normal;">{Travel}</span></td>
+                                                                        </tr>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                            </table>
+                            <p style="margin-bottom:0;">
+                                <a href="{View_ProjectDetails_url}" style="color:#fc5912">View role details</a>
+                            </p>
+                            <p style="background-color:#fc5912; text-align:center; padding: 13px 25px; border-radius: 3px; margin-top: 30px;"><a href="{Approve_Role_url}" style="color: #fff; text-decoration: none;display:block;">Approve</a></p>
+                            <p style="background-color:#fc5912; text-align:center; padding: 13px 25px; border-radius: 3px; margin-top: 30px;"><a href="{Return_Role_url}" style="color: #fff; text-decoration: none;display:block;">Return</a></p>
+                            <p style="background-color:#fc5912; text-align:center; padding: 13px 25px; border-radius: 3px; margin-top: 30px;"><a href="{Deny_Role_url}" style="color: #fff; text-decoration: none;display:block;">Deny</a></p>
+                            <p style="margin-top: 30px;">If you have any questions, please contact <a href="mailto:{OpsEmail}" style="color:#fc5912; text-decoration: none;">Operations</a>.</p>
+                            
+                            <p style="margin-top: 30px;">Best regards,</p>
+                            <p style="margin-bottom:4px;">The Talent Exchange Team</p>
+                            <a href="mailto:talentexchange@us.pwc.com" style="color:#fc5912;">TalentExchange@us.pwc.com</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 25px 4%;background: #edd8cc;">
+                <table bgcolor="#edd8cc" style="width:100%" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="padding-bottom:20px;">
+                            <table style="width:100%" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <p style="margin:0 0 5px;font-size:14px;color:#333;">Invite Others to Join</p>
+                                        <p style="margin:0;">
+                                            <a href="{share_linkedin_link}" style="outline:none; border:0;">
+                                                <img src="{TE_in_img}" style="border:0;" alt="in" width="36" height="33">
+                                            </a>
+                                            <a href="{share_facebook_link}" style="outline:none; border:0;">
+                                                <img src="{TE_fb_img}" style="border:0;" alt="fb" width="36" height="33">
+                                            </a>
+                                            <a href="{share_twitter_link}" style="outline:none; border:0;">
+                                                <img src="{TE_tw_img}" style="border:0;" alt="tw" width="36" height="33">
+                                            </a>
+                                            <a href="{share_gPlus_link}" style="outline:none; border:0;">
+                                                <img src="{TE_gPlus_img}" style="border:0;" alt="gpls" width="36" height="33">
+                                            </a>
+                                            <a href="mailto:?subject=It just got easier to fill your pipeline with interesting work&body=Check out PwC's Talent Exchange, a first-of-its kind marketplace that connects independent talent with exciting opportunities at PwC.
+ With the Talent Exchange you will have opportunities to work on high-profile projects and interesting challenges for leading brands, get direct access to PwC teams and have greater transparency into proposed project pipelines, timing and even market pricing.">
+                                                <img src="{share_mail_link}" alt="mail" width="36" height="33">
+                                            </a>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p style="margin:0 0 5px;font-size:14px;color:#333;">Get the App</p>
+                                        <p style="margin:0;font-size:12px;font-weight:bold"><a style="color:#fc5912;" href="{appleStore_link}" target="_blank">Apple</a></p>
+                                        <p style="margin:0;font-size:12px;font-weight:bold"><a style="color:#fc5912;" href="{playStore_link}" target="_blank">Android</a></p>            
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="font-size:11px;font-weight:bold;text-align:left">
+                        <td>
+                            <table style="width:100%" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <div style="width: 100%;max-width: 180px;display: inline-block;vertical-align: top;text-align:left;color:#fc5912">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <a style="color:#fc5912; margin-bottom:10px" href="{aboutPWC_URL}"  target="_blank">MORE ABOUT PwC</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div style="width: 100%;max-width: 180px;display: inline-block;vertical-align: top;text-align:left;color:#fc5912">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <a style="color:#fc5912; margin-bottom:10px" href="{Term_Condition_link}" target="_blank">TERMS &amp; CONDITIONS</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div style="width: 100%;max-width: 180px;display: inline-block;vertical-align: top;text-align:left;color:#fc5912">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <a style="color:#fc5912; margin-bottom:10px" href="{Privacy_Policy_link}" target="_blank">PRIVACY POLICY</a>
+                                                    </td>
+                                                </tr>
+                                            </table>                                         
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                         <td style="font-size:10px; color:#333">
+                            <p style="font-size:10px">&copy; 2018 PwC. All rights reserved. PwC refers to the US member firm or one of its subsidiaries or affiliates, and may sometimes refer to the PwC network. Each member firm is a separate legal entity. Please see <a style="color:#fc5912;" href="{pwcStructure_link}" target="_blank">www.pwc.com/structure</a> for further details. We are proud to be an Affirmative Action and Equal Opportunity Employer. Talent Exchange is a trademark of PwC.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</body>
+</html>

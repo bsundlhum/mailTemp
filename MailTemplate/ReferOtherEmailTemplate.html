@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>You're referred to a role!</title>
+</head>
+<body>
+    <div>
+        <i style="font-weight:bold; font-size:2em;display:block;background-color:darkgray; padding:10px;">You're referred!</i>
+        <p style="padding-left:10px;">
+            {Referrer} referred you to a role in Talent Exchange.
+        </p>
+        <p style="padding-left:15px;">
+            "{Message}"
+        </p>
+        <p style="padding-left:15px;">Hope it works out,</p>
+        <p style="padding-left:15px;">{Referrer_FirstName}</p>
+
+        <div class="role-card" style="height:200px; border: solid 1px #ddd;border-radius: 2px;margin-bottom: 10px;padding: 18px 20px 8px;">
+            <div class="row" style="margin-left: -10px;margin-right: -10px;">
+                <div class="col-xs-12 h4 role-title" style="color:#58D3F7;font-size:1.2em; float: left;width: 100%;font-weight: 700;margin: 0 0 10px;font-family: 'Helvetica Neue','Arial';text-transform: uppercase;">
+                    {JobTitle}
+                </div>
+            </div>
+            <div class="row" style="margin-left: -10px;margin-right: -10px;">
+                <p class="h2 col-sm-6" style="margin-bottom:0; color: #999;font-weight: 900;margin: 0 0 20px;font-family: 'ITCCharter','Georgia';font-style: italic;font-size: 14px; width: 50%;float: left;">
+                    {Sector}
+                </p>
+                <div class="col-sm-6" style=" width: 50%;float: left;">{FitScore}</div>
+            </div>
+            <div class="row" style="margin-top:70px;margin-left: -10px;margin-right: -10px;">
+                <h5 class="location col-xs-6" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap; width: 50%;">
+                    {WorkLocationCity}, {State}
+                </h5>
+            </div>
+
+            <hr>
+            <div class="row role-details" style="margin-left: -10px;margin-right: -10px;">
+                <dl class="stacked col-sm-3" style=" width: 25%;float: left;">
+                    <dt style="color: #999;font-size: 1.2em;">START</dt>
+                    <dd style="margin: 0;">{Startdate}</dd>
+                </dl>
+                <dl class="stacked col-sm-3" style=" width: 25%;float: left;">
+                    <dt style="color: #999;font-size: 1.2em;">END</dt>
+                    <dd style="margin: 0;">{Enddate}</dd>
+                </dl>
+                <dl class="stacked col-sm-3" style=" width: 25%;float: left;">
+                    <dt style="color: #999;font-size: 1.2em;">DURATION</dt>
+                    <dd style="margin: 0;">{Duration}</dd>
+                </dl>
+                <dl class="stacked col-sm-3" style=" width: 25%;float: left;">
+                    <dt style="color: #999;font-size: 1.2em;">TRAVEL</dt>
+                    <dd style="margin: 0;">{Travel}</dd>
+                </dl>
+            </div>
+        </div>
+
+        <br />
+        <div class="row" style="margin-left: -10px;margin-right: -10px;height:25px;text-align:center;">
+            <div class="col-sm-4" style=" width: 33%;float: left;">.</div>
+            <div class="col-sm-4" style=" width: 33%;float: left;">
+                <div style="color:#fff; padding:5px;font-size:18px; font-family: Helvetica, Arial, sans-serif; text-decoration: none; width:100%; background-color:#58D3F7;">
+                    <a href="{ViewRoleDetailsURL}" style="color:#fff; padding:5px;font-size:18px; font-family: Helvetica, Arial, sans-serif; text-decoration: none; width:100%; background-color:#58D3F7;">
+                        View Role Details in Talent Exchange
+                    </a>
+                </div>
+                <br />
+
+            </div>
+            <div class="col-sm-4" style=" width: 33%;float: left;">.</div>
+        </div>
+    </div>
+    <br />
+    <div>
+        <p style="padding-left:10px;">
+            <a href="{Unsubscribe_url}" <span style="color: #58D3F7;font-size:15px">Unsubscribe</span></a>
+        </p>
+    </div>
+</body>
+</html>

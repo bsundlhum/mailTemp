@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <style type="text/css">
+        html{ margin: 0; padding: 0;}
+        body{
+            margin: 0 auto; padding: 0;
+            font-family: 'Helvetica Neue','Arial';
+            color:#333;
+            background:#fff;
+        }
+        p{
+            font-size:14px;
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body bgcolor="#fff">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="width: 100%;max-width: 600px;margin: 0 auto;font-family:'Helvetica Neue','Arial';font-size:14px;"><tr><td><![endif]-->
+    <table border="0" width="600" cellspacing="0" cellpadding="0" bgcolor="#fff" style="width: 100%;max-width: 600px;margin: 0 auto;font-family:'Helvetica Neue','Arial';font-size:14px;">
+        <tr>
+            <td style="background:#fff;height:80px; padding: 0 4%;">
+                <table style="width:100%" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width="70%"><a href="{TE_link}" target="_blank" style="outline:none; border:0;"><img src="{TE_logo_img}" style="max-width: 244px;width: 100%;border:0;" alt="Talent Exchange" /></a></td>
+                            <td width="30%" style="text-align:right;"><a href="{TE_Loign_link}" target="_blank" style="font-size:16px; font-weight:bold;color:#333;">Sign In</a></td>
+                        </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="background: #efefef;"><img src="{TE_strip_img}" width="100%"></td>
+        </tr>
+        <tr>
+            <td style="padding: 25px 4%;background: #ededed;">
+                <table bgcolor="#fff" style="width:100%" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="padding:20px; background:#fff">
+                            <p>Dear {User_First_Name},</p>
+                            <p style="margin:10px 0px">Here's your instant digest update from the Talent Exchange team. Below you'll see recent activity notifications about your roles and find out who has joined the Talent Exchange based on your invitations. Please note: all information here is new since your last digest.</p>
+                            <p style="margin:10px 0px">To change the frequency of these emails at any time, visit your&nbsp;<a style="color:#fc5912" href="{Link_To_Communications_Settings}">communications settings</a>.</p>
+                            <h6 style="color:rgb(153,153,153);font-size:14px;margin-bottom:0px">SCREENINGS ({Update_Count})</h6>
+                            <p style="margin-top:0px;margin-bottom:10px">Scheduled or completed screenings:</p>
+                            <p style="font-weight:700;color:rgb(252,89,18)"><a style="text-decoration:none;color:rgb(252,89,18)" href="{Link_To_Role}">{Role_Name}</a></p>
+                            <table width="100%" border="0" cellpadding="2" cellspacing="2" style="display:table;border: solid 1px #ddd;border-radius: 2px;padding: 10px ;margin: 20px auto;">
+                                    <tr>
+                                        <td colspan="2">
+                                            <div style="width: 100%;max-width: 250px;display: inline-block;vertical-align: top;">
+                                                <div style="float: left"><img src="{Talent_Photo_Url}" width="50" height="50" style="border-radius: 50%; border: 1px solid rgb(249, 154, 121)"/>
+                                                    </div>
+                                                    <div style="float: left; margin-left: 20px; margin-top: 5px">
+                                                        <div>
+                                                            <a style="font-weight: 700; font-size: 16px; text-transform: uppercase; color: rgb(252, 89, 18); text-decoration: none" href="{Link_To_Talent_Profile}">{Talent_Name}</a>
+                                                        </div>
+                                                        <div>
+                                                            <h6 style="color: rgb(153, 153, 153); font-size: 12px; text-transform: uppercase; margin: 10px 0px">{Talent_Title}</h6>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div style="width: 100%;max-width: 220px;display: inline-block;vertical-align: top;">
+                                                <div>
+                                                    <span style="float: right; font-weight: bold">Completed</span>
+                                                    <br /><span style="float: right;">{Screening_Completed_Date}</span><br />
+                                                </div>
+                                                <div style="float: right; margin-top: 5px;">
+                                                    <span>By</span>&nbsp;<span style="color: rgb(252, 89, 18);">{Screener_Name}</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top" style="padding:5px 0 0 0;border-top:1px solid #ddd;">
+                                            <P>{Screener_Name} marked talent as {decision} and provided the following notes:</P>
+                                            <p style="margin: 10px 0px">"{notes}"</p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            <p>&nbsp;</p>
+                            <p>Best regards,</p>
+                            <p style="margin-bottom:4px;">The Talent Exchange Team</p>
+                            <a href="mailto:talentexchange@us.pwc.com" style="color:#fc5912;">TalentExchange@us.pwc.com</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 25px 4%;background: #edd8cc;">
+                <table bgcolor="#edd8cc" style="width:100%" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="padding-bottom:20px;">
+                            <table style="width:100%" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <p style="margin:0 0 5px;font-size:14px;color:#333;">Invite Others to Join</p>
+                                        <p style="margin:0;">
+                                            <a href="{share_linkedin_link}" style="outline:none; border:0;">
+                                                <img src="{TE_in_img}" style="border:0;" alt="in" width="36" height="33">
+                                            </a>
+                                            <a href="{share_facebook_link}" style="outline:none; border:0;">
+                                                <img src="{TE_fb_img}" style="border:0;" alt="fb" width="36" height="33">
+                                            </a>
+                                            <a href="{share_twitter_link}" style="outline:none; border:0;">
+                                                <img src="{TE_tw_img}" style="border:0;" alt="tw" width="36" height="33">
+                                            </a>
+                                            <a href="{share_gPlus_link}" style="outline:none; border:0;">
+                                                <img src="{TE_gPlus_img}" style="border:0;" alt="gpls" width="36" height="33">
+                                            </a>
+                                            <a href="mailto:?subject=It just got easier to fill your pipeline with interesting work&body=Check out PwC's Talent Exchange, a first-of-its kind marketplace that connects independent talent with exciting opportunities at PwC.
+ With the Talent Exchange you will have opportunities to work on high-profile projects and interesting challenges for leading brands, get direct access to PwC teams and have greater transparency into proposed project pipelines, timing and even market pricing.">
+                                                <img src="{share_mail_link}" alt="mail" width="36" height="33">
+                                            </a>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p style="margin:0 0 5px;font-size:14px;color:#333;">Get the App</p>
+                                        <p style="margin:0;font-size:12px;font-weight:bold"><a style="color:#fc5912;" href="{appleStore_link}" target="_blank">Apple</a></p>
+                                        <p style="margin:0;font-size:12px;font-weight:bold"><a style="color:#fc5912;" href="{playStore_link}" target="_blank">Android</a></p>            
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="font-size:11px;font-weight:bold;text-align:left">
+                        <td>
+                            <table style="width:100%" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <div style="width: 100%;max-width: 180px;display: inline-block;vertical-align: top;text-align:left;color:#fc5912">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <a style="color:#fc5912; margin-bottom:10px" href="{aboutPWC_URL}"  target="_blank">MORE ABOUT PwC</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div style="width: 100%;max-width: 180px;display: inline-block;vertical-align: top;text-align:left;color:#fc5912">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <a style="color:#fc5912; margin-bottom:10px" href="{Term_Condition_link}" target="_blank">TERMS &amp; CONDITIONS</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div style="width: 100%;max-width: 180px;display: inline-block;vertical-align: top;text-align:left;color:#fc5912">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <a style="color:#fc5912; margin-bottom:10px" href="{Privacy_Policy_link}" target="_blank">PRIVACY POLICY</a>
+                                                    </td>
+                                                </tr>
+                                            </table>                                         
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                         <td style="font-size:10px; color:#333">
+                            <p style="font-size:10px">&copy; 2018 PwC. All rights reserved. PwC refers to the US member firm or one of its subsidiaries or affiliates, and may sometimes refer to the PwC network. Each member firm is a separate legal entity. Please see <a style="color:#fc5912;" href="{pwcStructure_link}" target="_blank">www.pwc.com/structure</a> for further details. We are proud to be an Affirmative Action and Equal Opportunity Employer. Talent Exchange is a trademark of PwC.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</body>
+</html>

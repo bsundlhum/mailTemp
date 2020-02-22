@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template:emailTemplate application="fraud forum website" version="1.2" xmlns:user="http://www.bitethebullet.co.uk/EmailProcessor/UserData"
+xmlns:template="http://bitethebullet.co.uk/EmailProcessor/Template">
+<template:name>Approve User</template:name>
+<template:description>Sends a email to new user after his registration is approved</template:description>
+<template:mailFormat>PlainText</template:mailFormat>
+<template:message>
+<template:subject><user:userData name="application_name" mandatory="true" /> - Welcome</template:subject>
+<template:body>
+Dear <user:userData name="user_full_name" mandatory="true" />,
+
+  Thank you for registering with <user:userData name="application_name" mandatory="true" /> website.
+  Please click on this link to confirm your account.
+  <user:userData name="application_website" mandatory="true" />
+
+Kind regards,
+Administrator
+
+
+
+</template:body>
+<template:attachments>
+</template:attachments>
+</template:message>
+</template:emailTemplate>
+
+
